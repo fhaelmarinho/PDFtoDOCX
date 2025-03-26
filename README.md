@@ -1,5 +1,7 @@
 # PDF to DOCX Converter
 
+English version - https://github.com/fhaelmarinho/PDFtoDOCX/blob/main/README-us.md
+
 ## Objetivo
 Este projeto tem como objetivo fornecer uma interface gráfica simples para converter arquivos PDF em arquivos DOCX utilizando a biblioteca `pdf2docx`.
 
