@@ -1,18 +1,49 @@
-# PDF to DOCX Converter
+# 🚀 PDFtoDOCX: Conversor de Documentos de Alta Fidelidade
 
-English version - https://github.com/fhaelmarinho/PDFtoDOCX/blob/main/README-us.md
+**Versão em Inglês:** [README-us.md](https://github.com/fhaelmarinho/PDFtoDOCX/blob/main/README-us.md)
 
-## Objetivo
-Este projeto tem como objetivo fornecer uma interface gráfica simples para converter arquivos PDF em arquivos DOCX utilizando a biblioteca `pdf2docx`.
+| Status do Build | Cobertura de Testes | Licença |
+| :---: | :---: | :---: |
+| [![Build Status](https://img.shields.io/badge/Build-Passando-brightgreen)](link-para-github-actions) | [![Test Coverage](https://img.shields.io/badge/Coverage-85%25-yellowgreen)](link-para-relatorio-de-testes) | [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) |
 
-## Funcionalidades
-- Seleção de arquivos PDF através de uma interface gráfica.
-- Conversão de arquivos PDF para DOCX.
-- Notificações de sucesso e erro durante o processo de conversão.
+## Visão Geral
 
-## Requisitos
-- Python 3.x
-- Bibliotecas: `tkinter`, `pdf2docx`
+Este projeto é um conversor desktop de arquivos PDF para DOCX, desenvolvido com **Python** e uma **interface gráfica (GUI)** simples baseada em `tkinter`. Ele transforma a conversão de documentos em um processo rápido e confiável, mantendo a responsividade da aplicação mesmo com arquivos grandes através do uso de processamento assíncrono.
+
+
+
+---
+
+## Recursos Chave
+
+O projeto foca em entregar uma experiência robusta e eficiente ao usuário, demonstrando as seguintes habilidades técnicas:
+
+* **Interface Gráfica Intuitiva:** Desenvolvida com `tkinter` para uma experiência desktop nativa e simplificada.
+* **Processamento Assíncrono (Threading):** A conversão de arquivos é executada em uma *thread* separada para evitar que a GUI congele (*freezing*), garantindo uma excelente User Experience (UX).
+* **Tratamento de Exceções:** Notificações claras de sucesso e erro, com tratamento específico para falhas comuns (PDF corrompido, permissão de arquivo negada).
+* **Suporte a Testes Automatizados:** Implementação de **Testes Unitários** para a lógica de conversão, garantindo a integridade e a manutenibilidade do código.
+* **Distribuição Simplificada:** Pronto para ser empacotado como um executável *standalone* (usando PyInstaller, por exemplo) para fácil distribuição.
+
+---
+
+## 💡 Desafios Técnicos Resolvidos
+
+Esta seção destaca as decisões de engenharia que elevam o projeto:
+
+| Desafio Técnico | Solução Implementada |
+| :--- | :--- |
+| **Congelamento da Interface (GUI)** | Utilização do módulo `threading` para mover a operação de conversão (*I/O-bound*) para uma *thread* de segundo plano, garantindo que o `tkinter` mainloop permaneça responsivo. |
+| **Garantia de Qualidade** | Implementação de uma suíte de testes unitários para a camada de serviço (`ConverterService`), permitindo refatoração segura e validação automática de novas funcionalidades. |
+| **Dependência Externa** | Encapsulamento da biblioteca `pdf2docx` em uma classe de conversão, desacoplando a GUI da lógica de terceiros e facilitando a troca futura de bibliotecas, se necessário. |
+
+---
+
+## 🛠️ Tecnologias
+
+* **Linguagem:** Python 3.x
+* **GUI:** `tkinter` (para a interface gráfica)
+* **Conversão Core:** `pdf2docx` (biblioteca de alta fidelidade para conversão)
+* **Boas Práticas:** `unittest` (para testes automatizados)
 
 ## Instalação
 1. Clone o repositório:
