@@ -32,7 +32,7 @@ Esta seção destaca as decisões de engenharia que elevam o projeto:
 
 | Desafio Técnico | Solução Implementada |
 | :--- | :--- |
-| **Congelamento da Interface (GUI)** | Utilização do módulo `threading` para mover a operação de conversão (*I/O-bound*) para uma *thread* de segundo plano, garantindo que o `tkinter` mainloop permaneça responsivo. |
+| **Congelamento da Interface (GUI)** | garantindo que permaneça responsiva. |
 | **Garantia de Qualidade** | Implementação de uma suíte de testes unitários para a camada de serviço (`ConverterService`), permitindo refatoração segura e validação automática de novas funcionalidades. |
 | **Dependência Externa** | Encapsulamento da biblioteca `pdf2docx` em uma classe de conversão, desacoplando a GUI da lógica de terceiros e facilitando a troca futura de bibliotecas, se necessário. |
 
