@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Conversor de PDF para DOCX</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de PDF para DOCX</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form method="post" action="/convert" enctype="multipart/form-data">
+            <p><input type="file" name="pdf_file" accept=".pdf" required></p>
+            <p><input type="submit" value="Converter"></p>
+        </form>
+    </div>
+</body>
+</html>
+
