@@ -8,7 +8,7 @@
 
 ## Visão Geral
 
-Este projeto é um conversor desktop de arquivos PDF para DOCX, desenvolvido com **Python** e uma **interface gráfica (GUI)** simples baseada em `tkinter`. Ele transforma a conversão de documentos em um processo rápido e confiável, mantendo a responsividade da aplicação mesmo com arquivos grandes através do uso de processamento assíncrono.
+Este projeto é um conversor desktop de arquivos PDF para DOCX, desenvolvido com **Python** e uma **interface gráfica (GUI)** simples. Ele transforma a conversão de documentos em um processo rápido e confiável, mantendo a responsividade da aplicação mesmo com arquivos grandes através do uso de processamento assíncrono.
 
 
 
