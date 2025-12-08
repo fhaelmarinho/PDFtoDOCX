@@ -1,2 +1,6 @@
-tkinter
+#tkinter
 pdf2docx
+fastapi
+uvicorn[standard]
+python-multipart
+jinja2

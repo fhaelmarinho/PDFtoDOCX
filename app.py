@@ -1,5 +1,5 @@
-import tkinter as tk
-from tkinter import messagebox, filedialog
+#import tkinter as tk
+#from tkinter import messagebox, filedialog
 import os
 import threading
 from converter_service import ConverterService # Importa o serviço criado
@@ -89,8 +89,3 @@ class PDFtoDOCXApp(tk.Tk):
         else:
             messagebox.showerror(title="Erro", message=message)
 
-if __name__ == '__main__':
-    # Este bloco deve ser movido para o main.py
-    # app = PDFtoDOCXApp()
-    # app.mainloop()
-    pass
